@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Practical2</title>
+
+</head>
+
+<body>
+
+
+
+<h1><i><u><b>Front End Practicals:2</b></u></i></h1>
+
+
+
+<p><i><u><b>Create an HTML document with Ordered and Unordered lists, Inserting Images, Internal and
+
+External linking</b></u></i></p>
+
+
+
+<h2>Lists</h2>
+
+
+
+<h3>Ordered List:</h3>
+
+<ol>
+
+    <li>Item 1</li>
+
+    <li>Item 2</li>
+
+    <li>Item 3</li>
+
+</ol>
+
+
+
+<h3>Unordered List:</h3>
+
+<ul>
+
+    <li>Anime</li>
+
+    <li>Light Novel</li>
+
+    <li>Manga</li>
+
+</ul>
+
+
+
+<h2>Images</h2>
+
+<img src="https://c4.wallpaperflare.com/wallpaper/560/855/635/spy-x-family-anya-forger-hd-wallpaper-preview.jpg">
+
+
+
+<h2>Internal Linking</h2>
+
+
+
+<p>Visit the <a href="#Lists">Lists</a> section above.</p>
+
+
+
+<h2>External Linking</h2>
+
+
+
+<p>Watch more Anime at: <a href="https://sites.google.com/view/animeguidehub?usp=sharing
+
+" target="_blank">AnimeHub</a>.</p>
+
+
+
+</body>
+
+</html>

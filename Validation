@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Registration Form</title>
+
+  <style>
+
+   body{background-color: darkslategrey;
+
+    align-items: center;
+
+    align-content: center;
+
+    justify-content: center;
+
+    padding: 0px;
+
+    margin: 0px;
+
+    }
+
+   h1{text-align: center;
+
+    margin-top: 5%;
+
+    }
+
+   form{
+
+  text-align: center;
+
+  font-size: x-large ;
+
+  background-color: silver;
+
+  max-width: 800px;
+
+  padding: 30px;
+
+  margin: auto;
+
+  border-radius:20px;
+
+   }
+
+
+
+   label{
+
+    text-align: center;
+
+    font-size: large;
+
+    max-width: 800px;
+
+    font: arial;
+
+    }
+
+    
+
+    
+
+   input,Select,textarea{
+
+    width: 95%;
+
+    padding: 10px;
+
+    margin-bottom: 5px;
+
+    border-radius: 4px;
+
+    }    
+
+
+
+
+
+</style>
+
+  
+
+  
+
+</head>
+
+
+
+<body>
+
+  <form id="registrationForm" onsubmit="return validateForm()">
+
+
+
+    <label for="rollNumber">Roll Number of the Student:</label>
+
+    <input type="text" id="rN" name="rollNumber" placeholder="Enter 7-digit roll number">
+
+
+
+    <label for="name">Name of the Student:</label>
+
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    
+
+    <label for="email">Email</label>
+
+    <input type="email" id="email" placeholder="Enter your email">
+
+
+
+    
+
+    Gender:
+
+    <label for="male">Male</label>
+
+    <input type="radio" id="male" name="gender" value="male">
+
+
+
+    <label for="female">Female</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+
+
+
+    
+
+
+
+    <label for="dob">Date of Birth:</label>
+
+    <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD">
+
+
+
+    <label>Subjects:</label>
+
+    <label for="math">Math</label>
+
+    <input type="checkbox" id="math" name="subject" value="math">
+
+    <label for="english">English</label>
+
+    <input type="checkbox" id="english" name="subject" value="english">
+
+   
+
+
+
+    <label for="department">Department:</label>
+
+    <select id="department" name="department">
+
+      <option value="it">IT</option>
+
+      <option value="cs">CS</option>
+
+      <option value="ece">ECE</option>
+
+      <option value="me">ME</option>
+
+    </select>
+
+
+
+    <label for="address">Address:</label>
+
+    <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+
+
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+
+
+  <script>
+
+    function validateForm() {
+
+      var rollNumber = document.getElementById('rN').value;
+
+      var name = document.getElementById('name').value;
+
+      var dob = document.getElementById('dob').value;
+
+      
+
+
+
+      var rollNumberPattern = /^\d{7}$/;
+
+      var namePattern = /^[a-zA-Z\s]+$/;
+
+      var dobPattern = /^\d{4}-\d{2}-\d{2}$/;
+
+
+
+      var isValid = true;    
+
+       var errorMessage = "";
+
+
+
+      if (!rollNumberPattern.test(rollNumber)) {    
+
+        isValid = false;
+
+        errorMessage += "Roll Number must be a 7-digit numeric value.\n";
+
+      }
+
+
+
+      if (!namePattern.test(name)) {
+
+        isValid = false;
+
+        errorMessage += "Name should be an alphabetic value.\n";
+
+      }
+
+
+
+      if (!dobPattern.test(dob)) {
+
+        isValid = false;
+
+        errorMessage += "Date of Birth should be in YYYY-MM-DD format.\n";
+
+      }
+
+
+
+      if (!isValid) {
+
+        alert(errorMessage);
+
+      }
+
+
+
+      return isValid;
+
+    }
+
+  </script>
+
+</body>
+
+</html>

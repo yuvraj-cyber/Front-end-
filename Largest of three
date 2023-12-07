@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Largest of Three Numbers</title>
+
+</head>
+
+<body>
+
+
+
+<h2>Largest of Three Numbers</h2>
+
+<button onclick="findLargest()">Find Largest</button>
+
+
+
+<script>
+
+function findLargest() {
+
+    var num1 = parseFloat(prompt("Enter the first number:"));
+
+    var num2 = parseFloat(prompt("Enter the second number:"));
+
+    var num3 = parseFloat(prompt("Enter the third number:"));
+
+
+
+    var largest = Math.max(num1, num2, num3);
+
+
+
+    alert("The largest number is: " + largest);
+
+}
+
+</script>
+
+
+
+</body>
+
+</html

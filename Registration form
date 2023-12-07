@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body{background-color: darkslategrey;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    
+}
+h1{text-align: center;
+    margin-top: 5%;
+}
+form{
+  text-align: center;
+  font-size: x-large ;
+  background-color: white;
+  max-width: 800px;
+  padding: 30px;
+  margin: auto;
+  border-radius:20px;
+}
+
+label{
+    text-align: center;
+    font-size: large;
+    max-width: 800px;
+    font: arial;
+    }
+    
+    
+input,Select,textarea{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}    
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+<h1>Student Registration form</h1>
+    <form id=registrationForm>
+
+<label for="rollNumber">Roll Number</label><br>
+<input type="int" id="rollNumber" placeholder="Enter 7 digit rollNumber">
+<br>
+<br>
+
+<label for="student name">Student Name </label><br>
+<input type="text" id="name" placeholder="Enter student name">
+<br>
+<br>
+
+<label for="email">Email</label><br>
+<input type="email" id="email" placeholder="Enter your email">
+<br>
+<br>
+
+
+Gender:
+<br>
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male">
+<br>
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female">
+<br>
+<br>
+
+<label for="dob">Date of Birth</label><br>
+
+<input type="date" id="dob" name="Date of Birth" placeholder="DD-MM-YYYY">
+<br><br>
+
+Language:<br>
+<label for="hindi">Hindi</label>
+<input type="checkbox" id="hindi" name="language" value="Hindi">
+<br>
+<label for="English">English</label>
+<input type="checkbox" id="English" name="language" value="English">
+<br>
+<br>
+
+<label for="course">Select Course</label>
+<select id="course" name="course">
+
+<option value="C.S">C.S</option>
+
+<option value="BCA">BCA</option>
+
+<option value="Mathamatics">Mathamatics</option>
+
+<option value="B.A">B.A</option></select>
+<br>
+
+<br>
+<label for="address">Address</label><br>
+<textarea id="address" name="address" rows="4"  placeholder="Enter your Address" ></textarea>
+<br>
+<br>
+
+<input type="submit" value="Submit">
+<br>
+<br>
+<input type="reset" value="Reset">
+
+
+
+
+
+
+    </form>
+</body>
+</html>

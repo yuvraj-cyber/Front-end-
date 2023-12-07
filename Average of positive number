@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Average of Positive Numbers</title>
+
+</head>
+
+<body>
+
+
+
+<h2>Average of Positive Numbers</h2>
+
+<button onclick="calculateAverage()">Calculate Average</button>
+
+
+
+<script>
+
+function calculateAverage() {
+
+    var numbersInput = prompt("Enter positive numbers separated by 'z':");
+
+    var numbersArray = numbersInput.split('z');
+
+    var sum = 0;
+
+    var count = 0;
+
+
+
+    for (var i = 0; i < numbersArray.length; i++) {
+
+        var num = parseFloat(numbersArray[i]);
+
+        if (!isNaN(num) && num > 0) {
+
+            sum += num;
+
+            count++;
+
+        }
+
+    }
+
+
+
+    if (count > 0) {
+
+        var average = sum / count;
+
+        alert("The average of positive numbers is: " + average);
+
+    } else {
+
+        alert("No valid positive numbers entered.");
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>

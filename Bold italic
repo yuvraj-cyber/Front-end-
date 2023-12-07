@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Front End Practical1</title>
+
+</head>
+
+<body>
+
+    <h1><style="font-family: Georgia, serif;">
+
+        <span style="font-size:200%;">
+
+        <span style="color: blue;"> <u><strong><em>Practical 1:</em> </strong></u>
+
+    </h1>
+
+    <h2><span style="color: MediumSeaGreen;"><em><strong>Create an HTML document with following formatting-Bold, Italics, Underline, Colors, Headings Title, Font and Font Width, Background, Paragraph, Line Brakes, Horizontal Line, Blinking text as well as marquee text.</strong><em></h2>
+
+    
+
+    <h3><span style="color: orange;"><span style="font-size:150%;"><strong><span style="background-color: black ;">Scope Of Html In Future</strong></h3>
+
+
+
+ 
+
+
+
+    <p><span style="font-family: Arial, sans-serif;">
+
+HTML (Hypertext Markup Language) is the backbone of the World Wide Web and will continue to play a pivotal role in the future. As technology advances, HTML evolves to accommodate new features and demands. With the advent of HTML5 and its multimedia capabilities, the scope of HTML in the future is promising. HTML will remain the foundation for web development, ensuring cross-platform compatibility and enabling the creation of dynamic, interactive, and visually appealing websites and web applications. The future holds exciting possibilities for HTML, with its relevance expected to persist as long as the internet remains an integral part of our lives.</span>.</p>
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+    <hr>
+
+
+
+ 
+
+    <p><blink>By:Thank You</blink></p>
+
+
+
+    <marquee behavior="scroll" direction="left">By: Yuvraj Singh</marquee>
+
+</body>
+
+</html>
